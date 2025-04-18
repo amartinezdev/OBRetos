@@ -20,8 +20,11 @@ public class AdivinaAPP extends JFrame implements ActionListener {
 	JPanel panel;
 
 	static int intentos = 5;
-	static int numAdivinar = (int) (Math.random() * 50 + 1);
+	static int numAdivinar = (int) (Math.random() * 20 + 1);
 
+	/**
+	 * Método que hace un restart del juego poniendo los valores predeterminados.
+	 */
 	public void resetGame() {
 		intentos = 5;
 
@@ -37,12 +40,15 @@ public class AdivinaAPP extends JFrame implements ActionListener {
 		setTitle("Adivina");
 	}
 
+	/**
+	 * Constructor de la ventana gráfica
+	 */
 	AdivinaAPP() {
 		panel = new JPanel();
 
 		panel.setLayout(new GridLayout(0, 1, 0, 8)); // (rows, cols, ancho, alto)
 
-		men1 = new JLabel("Introduce un número para adivinar");
+		men1 = new JLabel("Introduce un número para adivinar (1-20)");
 		men2 = new JLabel("Te quedan " + intentos + " intentos.");
 		boton = new JButton("Intentar");
 		boton.addActionListener(this);
@@ -63,10 +69,14 @@ public class AdivinaAPP extends JFrame implements ActionListener {
 		add(panel);
 	}
 
+	/**
+	 * Método que realiza la acción al pulsar los botones.
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		intentos--;
 		men2.setText("Te quedan " + intentos + " intentos.");
-		
+
 		if (e.getSource() == boton) {
 			try {
 				if (intentos == 0) {
@@ -84,17 +94,15 @@ public class AdivinaAPP extends JFrame implements ActionListener {
 					men2.setText("Has adivinado!");
 					boton.setEnabled(false);
 				}
-				intentos--;
-				
+
 			} catch (Exception e2) {
 				setTitle("ERROR");
 			}
 		}
-		
-		if(e.getSource() == reiniciar) {
+
+		if (e.getSource() == reiniciar) {
 			resetGame();
 		}
-		
 
 	}
 
@@ -109,6 +117,9 @@ public class AdivinaAPP extends JFrame implements ActionListener {
 
 	}
 
+	/**
+	 * Ventaja JDialog para intentos 0
+	 */
 	public static class Intentos0 extends JDialog {
 
 		JLabel men1, men2;
@@ -123,13 +134,15 @@ public class AdivinaAPP extends JFrame implements ActionListener {
 			setSize(250, 125);
 			setLocationRelativeTo(null);
 
-
 			add(men1);
 			add(men2);
 
 		}
 	}
 
+	/**
+	 * Ventaja JDialog para número menor
+	 */
 	public static class numMenor extends JDialog {
 
 		JLabel men1, men2;
@@ -148,6 +161,9 @@ public class AdivinaAPP extends JFrame implements ActionListener {
 		}
 	}
 
+	/**
+	 * Ventaja JDialog para número mayor 0
+	 */
 	public static class numMayor extends JDialog {
 
 		JLabel men1;
