@@ -11,7 +11,7 @@ Continúa pidiendo suposiciones hasta que el usuario adivine o hasta que se supe
 Si el usuario acierta, muestra un mensaje de felicitación.
 Si no acierta en el número de intentos permitidos, muestra un mensaje indicando que ha fallado y revela el número secreto.
 
-- [x] **Primer ejercicio**
+- [x] [**Primer ejercicio**](https://github.com/amartinezdev/OBRetos/blob/master/AdivinaAPP.java)
 
 ## 2. Reto: Diferencia Absoluta entre las Sumas de las Diagonales de una Matriz Cuadrada
 Dada una matriz cuadrada (un arreglo bidimensional de tamaño n×nn×n), escribe una función que calcule la diferencia absoluta entre las sumas de sus dos diagonales principales.
