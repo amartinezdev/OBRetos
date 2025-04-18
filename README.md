@@ -31,4 +31,4 @@ Suma de la diagonal principal: 11+5+(−12)=4.
 Suma de la diagonal secundaria: 4+5+10=19.
 Diferencia absoluta: [4−19]=15.
 
-- [x] **Segundo ejercicio**
+- [x] [**Segundo ejercicio**](https://github.com/amartinezdev/OBRetos/blob/master/Matriz.java)
