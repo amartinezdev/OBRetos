@@ -11,7 +11,7 @@ Continúa pidiendo suposiciones hasta que el usuario adivine o hasta que se supe
 Si el usuario acierta, muestra un mensaje de felicitación.
 Si no acierta en el número de intentos permitidos, muestra un mensaje indicando que ha fallado y revela el número secreto.
 
-- [x] [**Primer ejercicio**](https://github.com/amartinezdev/OBRetos/blob/master/AdivinaAPP.java)
+- [x] [**Primer reto**](https://github.com/amartinezdev/OBRetos/blob/master/AdivinaAPP.java)
 
 ## 2. Reto: Diferencia Absoluta entre las Sumas de las Diagonales de una Matriz Cuadrada
 Dada una matriz cuadrada (un arreglo bidimensional de tamaño n×nn×n), escribe una función que calcule la diferencia absoluta entre las sumas de sus dos diagonales principales.
@@ -31,7 +31,7 @@ Suma de la diagonal principal: 11+5+(−12)=4.
 Suma de la diagonal secundaria: 4+5+10=19.
 Diferencia absoluta: [4−19]=15.
 
-- [x] [**Segundo ejercicio**](https://github.com/amartinezdev/OBRetos/blob/master/Matriz.java)
+- [x] [**Segundo reto**](https://github.com/amartinezdev/OBRetos/blob/master/Matriz.java)
 
 ## 3. Reto: IMC
 
@@ -39,4 +39,4 @@ En este reto te propongo que crees una calculadora que indique al usuario su ín
 
 No es necesario que se soliciten los datos por consola, simplemente asigna el valor a las variables que instancies, y luego utilízalas para calcular el IMC.
 
-- [x] [**Segundo ejercicio**](https://github.com/amartinezdev/OBRetos/blob/master/IMCapp.java)
+- [x] [**Tercer reto**](https://github.com/amartinezdev/OBRetos/blob/master/IMCapp.java)
