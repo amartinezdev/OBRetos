@@ -32,3 +32,11 @@ Suma de la diagonal secundaria: 4+5+10=19.
 Diferencia absoluta: [4−19]=15.
 
 - [x] [**Segundo ejercicio**](https://github.com/amartinezdev/OBRetos/blob/master/Matriz.java)
+
+## 3. Reto: IMC
+
+En este reto te propongo que crees una calculadora que indique al usuario su índice de masa corporal (IMC). Una vez hayas calculado el IMC, deberás indicar a la categoría que pertenece el usuario.
+
+No es necesario que se soliciten los datos por consola, simplemente asigna el valor a las variables que instancies, y luego utilízalas para calcular el IMC.
+
+- [x] [**Segundo ejercicio**](https://github.com/amartinezdev/OBRetos/blob/master/IMCapp.java)
